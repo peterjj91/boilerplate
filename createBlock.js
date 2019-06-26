@@ -20,12 +20,12 @@ if (blockName) {
   mkdirp(dirPath, (err) => {                                           // создаем
     // Если какая-то ошибка — покажем
     if (err) {
-      console.error(`[PP] Отмена операции: ${err}`);
+      console.error(`[Touch Invest] Отмена операции: ${err}`);
     }
 
     // Нет ошибки, поехали!
     else {
-      console.log(`[PP] Создание папки ${dirPath} (если отсутствует)`);
+      console.log(`[Touch Invest] Создание папки ${dirPath} (если отсутствует)`);
 
       // Обходим массив расширений и создаем файлы, если они еще не созданы
       extensions.forEach((extention) => {
@@ -50,7 +50,7 @@ if (blockName) {
             projectConfig.blocks[blockName] = [];
             const newPackageJson = JSON.stringify(projectConfig, '', 2);
             fs.writeFileSync('./projectConfig.json', newPackageJson);
-            fileCreateMsg = '[PP] Подключение блока добавлено в projectConfig.json';
+            fileCreateMsg = '[Touch Invest] Подключение блока добавлено в projectConfig.json';
           }
         }
 
@@ -71,10 +71,10 @@ if (blockName) {
           if (fileExist(imgFolder) === false) {
             mkdirp(imgFolder, (err) => {
               if (err) console.error(err);
-              else console.log(`[PP] Создание папки: ${imgFolder} (если отсутствует)`);
+              else console.log(`[Touch Invest] Создание папки: ${imgFolder} (если отсутствует)`);
             });
           } else {
-            console.log(`[PP] Папка ${imgFolder} НЕ создана (уже существует) `);
+            console.log(`[Touch Invest] Папка ${imgFolder} НЕ создана (уже существует) `);
           }
         }
 
@@ -82,21 +82,21 @@ if (blockName) {
         if (fileExist(filePath) === false && extention !== 'img') {
           fs.writeFile(filePath, fileContent, (err) => {
             if (err) {
-              return console.log(`[PP] Файл НЕ создан: ${err}`);
+              return console.log(`[Touch Invest] Файл НЕ создан: ${err}`);
             }
-            console.log(`[PP] Файл создан: ${filePath}`);
+            console.log(`[Touch Invest] Файл создан: ${filePath}`);
             if (fileCreateMsg) {
               console.warn(fileCreateMsg);
             }
           });
         } else if (extention !== 'img') {
-          console.log(`[PP] Файл НЕ создан: ${filePath} (уже существует)`);
+          console.log(`[Touch Invest] Файл НЕ создан: ${filePath} (уже существует)`);
         }
       });
     }
   });
 } else {
-  console.log('[PP] Отмена операции: не указан блок');
+  console.log('[Touch Invest] Отмена операции: не указан блок');
 }
 
 // Оставить в массиве только уникальные значения (убрать повторы)

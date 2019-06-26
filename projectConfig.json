@@ -1,24 +1,53 @@
 {
   "blocks": {
-    "page": [],
-    "typo": [],
-    "page-header": [],
-    "page-footer": []
+        "default": [],
+        "page": [],
+        "typo": [],
+        "page-header": [],
+        "page-footer": [],
+        "sprite-svg": [],
+        "sprite-png": [],
+        "logo": [],
+        "btn": [],
+        "input": [],
+        "form": [],
+        "navbar": [],
+        "breadcrumb": [],
+        "dropdown": [],
+        "modal": [],
+        "list": [],
+        "pagination": [],
+        "progress": [],
+        "scrollspy": [],
+        "tooltips": [],
+        "card": [],
+        "toast": [],
+        "slider": [],
+        "image": [],
+        "select": [],
+        "slideout": [],
+        "menu": [],
+        "hamburger": [],
+        "table": [],
+        "accordion": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
-    "./src/scss/mixins.scss",
-    "./src/scss/functions.scss",
     "./node_modules/bootstrap/scss/bootstrap.scss",
+    "./node_modules/bootstrap-select/sass/bootstrap-select.scss",
     "./node_modules/slick-carousel/slick/slick.scss"
   ],
   "addCssAfter": [],
   "singleCompiled": [],
   "addJsBefore": [
-    "./node_modules/jquery/dist/jquery.min.js",
+    "./node_modules/jquery/dist/jquery.js",
+    "./node_modules/object-fit-images/dist/ofi.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",
-    "./node_modules/object-fit-images/dist/ofi.min.js",
-    "./node_modules/slick-carousel/slick/slick.min.js"
+    "./node_modules/popper.js/dist/umd/popper.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.js",
+    "./node_modules/slick-carousel/slick/slick.js",
+    "./node_modules/bootstrap-select/dist/js/bootstrap-select.js",
+    "./node_modules/slideout/dist/slideout.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"

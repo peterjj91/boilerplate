@@ -2,26 +2,32 @@
 // Не пишите тут какую-либо стороннюю стилизацию.
 
 body {
-  font-family: $font-family-sans-serif;
-  letter-spacing: 0.02em;
+  // font-family: $font-family-sans-serif;
+  min-width: 320px;
 }
 
 .h1,h1 {
-
+  @include media-breakpoint-up(md) {}
 }
 
 .h2,h2 {
-  
+  @include media-breakpoint-up(md) {}
 }
 
 .h3,h3 {
-  
+  @include media-breakpoint-up(md) {}
 }
 
 .h4,h4 {
-  
+  @include media-breakpoint-up(md) {}
 }
 
-.h5,h5 {
-  
+p, .text {
+  @include media-breakpoint-up(md) {}
 }
+
+a, .link {
+  &:hover, &:focus {}
+}
+
+

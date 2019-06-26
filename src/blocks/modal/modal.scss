@@ -1,0 +1,46 @@
+// В этом файле должны быть стили для БЭМ-блока modal, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.modal {
+
+  $block-name: &; // #{$block-name}__element {}
+  
+  &-backdrop {
+
+    &.show {}
+  }
+
+  &-content {
+
+    @include media-breakpoint-up(sm) {}
+  }
+
+  .close {
+    
+    @include media-breakpoint-up(sm) {}
+  }
+
+  &-title {
+  
+    @include media-breakpoint-up(sm) {}
+  }
+
+  &-dialog {
+
+    @include media-breakpoint-up(sm) {}
+  }
+
+  &-body {
+    
+  }
+
+  &-header {
+
+    @include media-breakpoint-up(sm) {}
+  }
+
+  &-footer {
+    
+  }
+}

@@ -1,0 +1,53 @@
+// В этом файле должны быть стили для БЭМ-блока navbar, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.navbar {
+
+  $block-name: &; // #{$block-name}__element {}
+
+  &-brand {
+    @include media-breakpoint-up(xl) {}
+
+    img, svg {
+      
+      
+      @include media-breakpoint-up(xl) {}
+    }
+  }
+
+  &-nav {
+
+    @include media-breakpoint-up(xl) {}
+
+    li {
+
+      @include media-breakpoint-up(xl) {}
+
+      &:last-child {}
+
+      &.active {
+        .nav-link {
+          
+        }
+      }
+    }
+
+    .nav-link {
+      
+    }
+  }
+
+  &-expand-lg {
+    #{$block-name} {
+      &-collapse {
+        justify-content: flex-end;
+        display: none !important;
+        
+        @include media-breakpoint-up(xl) {
+          display: flex !important;
+        }
+      }
+    }
+  }
+}

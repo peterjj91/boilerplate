@@ -1,12 +1,17 @@
-  
+// font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic-ext');
+
+$open-sans: 'Open Sans', sans-serif;
+$font-family-sans-serif: $open-sans;
+
 // Your variable overrides
 $body-bg: #000;
 $body-color: #111;
 
 $theme-colors: (
-  "primary": #0074d9,
-  "danger": #ff4136
-  // "secondary": 
+  "primary": #6CA3CB,
+    "danger": #ff4136,
+    "dark": #252528
 );
 
 $grid-columns:      12;
@@ -26,24 +31,8 @@ $grid-breakpoints: (
 );
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+  xl: 1220px
 );
-
-$font-family-sans-serif:
-  // Safari for macOS and iOS (San Francisco)
-  -apple-system,
-  // Chrome < 56 for macOS (San Francisco)
-  BlinkMacSystemFont,
-  // Windows
-  "Segoe UI";
-
-:root {
-  --haha: #007bff;
-  // --indigo: #6610f2;
-}
 
 // color: var(--blue);
 
@@ -75,5 +64,39 @@ $font-family-sans-serif:
 // Get fancy by offsetting, or changing the sort order
 // @include make-col-offset($size, $columns: $grid-columns);
 
+// color
+$color-dark: #787E8D;
+$color-darkness: #303033;
+$color-dust: #3A3B40;
+$color-space: #252528;
+$color-light: #515153;
+$color-lighter: #97A0B2;
+$color-ocean: #6CA3CB;
+$color-river: #EDF4F8;
+$color-shadow: #EAECF0;
+
+
+// breadcrumb
+$breadcrumb-divider: quote("/");
+
+
+// select bootstrap
+$color-red-error: rgb(185, 74, 72);
+$color-green-success: #28a745;
+$color-grey-arrow: rgba(204, 204, 204, 0.2) !default;
+
+$width-default: 220px !default; // 3 960px-grid columns
+
+$zindex-select-dropdown: 1060 !default; // must be higher than a modal background (1050)
+
+//** Placeholder text color
+$input-color-placeholder: #999 !default;
+$input-alt-color-placeholder: rgba(255, 255, 255, 0.5) !default;
+
+$input-padding-y-sm: .25rem !default;
+$input-padding-x-sm: .5rem !default;
+
+$input-padding-y-lg: 0.5rem !default;
+$input-padding-x-lg: 1rem !default;
 
 
